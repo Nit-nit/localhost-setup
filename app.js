@@ -34,7 +34,7 @@ fs.mkdirSync(frontendFolder);
 fs.mkdirSync(backendFolder);
 
 // Create index.html content.
-const indexHtmlContent = `// Your html code goes here
+const indexHtmlContent = `<!-- Your html code goes here -->
 <html>
   <head>
     <title>sample</title>
