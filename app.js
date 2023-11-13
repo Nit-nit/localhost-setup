@@ -66,11 +66,13 @@ fs.writeFileSync(path.join(frontendFolder, 'script.js'), scriptJsContent);
 const appJsContent = `const express = require('express');
 const app = express();
 const port = 3000;
+const os = require('os');
+const hostname = os.hostname();
 
 app.use(express.static('frontend'));
 
 app.listen(port, () => {
-  console.log('The server is running at http://localhost:'+port);
+  console.log(`The server is running at ${host}:${port}`);
 });
 `;
 
