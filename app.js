@@ -63,11 +63,13 @@ const scriptJsContent = `// Your JavaScript code goes here`;
 fs.writeFileSync(path.join(frontendFolder, 'script.js'), scriptJsContent);
 
 // Update app.js content to serve frontend files correctly.
-const appJsContent = `const express = require('express');
+const appJsContent = `// Your app.js file code goes here
+const express = require('express');
 const app = express();
-const port = 3000;
 const os = require('os');
+
 const hostname = os.hostname();
+const port = 3000;
 
 app.use(express.static('frontend'));
 
