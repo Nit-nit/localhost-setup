@@ -72,7 +72,7 @@ const hostname = os.hostname();
 app.use(express.static('frontend'));
 
 app.listen(port, () => {
-  console.log(`The server is running at ${host}:${port}`);
+  console.log('The server is running at ' + host + : + port);
 });
 `;
 
